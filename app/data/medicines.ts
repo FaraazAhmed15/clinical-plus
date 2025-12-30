@@ -1,0 +1,128 @@
+export type Medicine = {
+  name: string;
+  uses: string;
+};
+
+export const medicines: Medicine[] = [
+
+  // ================= BASIC PAIN & FEVER =================
+  { name: "Paracetamol", uses: "Used to reduce fever and relieve mild to moderate pain." },
+  { name: "Ibuprofen", uses: "Helps reduce pain, swelling, and inflammation." },
+  { name: "Aspirin", uses: "Used to relieve pain, reduce fever, and lower inflammation." },
+  { name: "Diclofenac", uses: "Used to relieve pain and inflammation." },
+  { name: "Aceclofenac", uses: "Used for pain and inflammatory conditions." },
+  { name: "Naproxen", uses: "Used to reduce pain and stiffness." },
+  { name: "Ketorolac", uses: "Used for short-term management of moderate pain." },
+  { name: "Tramadol", uses: "Used to relieve moderate to severe pain." },
+  { name: "Etoricoxib", uses: "Used to manage joint and muscle pain." },
+  { name: "Celecoxib", uses: "Used to treat pain and inflammation." },
+
+  // ================= COLD & ALLERGY =================
+  { name: "Cetirizine", uses: "Used to relieve allergy symptoms such as sneezing and itching." },
+  { name: "Levocetirizine", uses: "Used to treat allergic rhinitis." },
+  { name: "Loratadine", uses: "Used for allergy relief without drowsiness." },
+  { name: "Fexofenadine", uses: "Used to relieve seasonal allergies." },
+  { name: "Chlorpheniramine", uses: "Used to relieve runny nose and sneezing." },
+  { name: "Diphenhydramine", uses: "Used for allergy relief and cold symptoms." },
+  { name: "Phenylephrine", uses: "Used to relieve nasal congestion." },
+  { name: "Pseudoephedrine", uses: "Used to reduce sinus congestion." },
+  { name: "Dextromethorphan", uses: "Used to suppress dry cough." },
+  { name: "Guaifenesin", uses: "Used to loosen mucus in cough." },
+  { name: "Bromhexine", uses: "Used to treat productive cough." },
+  { name: "Ambroxol", uses: "Used to thin and loosen mucus." },
+
+  // ================= ANTIBIOTICS =================
+  { name: "Amoxicillin", uses: "Used to treat bacterial infections." },
+  { name: "Amoxiclav", uses: "Used for bacterial infections resistant to amoxicillin." },
+  { name: "Azithromycin", uses: "Used to treat respiratory and intestinal infections." },
+  { name: "Clarithromycin", uses: "Used for bacterial respiratory infections." },
+  { name: "Ciprofloxacin", uses: "Used to treat urinary and gastrointestinal infections." },
+  { name: "Ofloxacin", uses: "Used for bacterial infections." },
+  { name: "Levofloxacin", uses: "Used to treat respiratory and urinary infections." },
+  { name: "Doxycycline", uses: "Used for bacterial and acne infections." },
+  { name: "Cefixime", uses: "Used to treat typhoid and urinary infections." },
+  { name: "Ceftriaxone", uses: "Used for severe bacterial infections." },
+  { name: "Cefuroxime", uses: "Used for respiratory infections." },
+  { name: "Metronidazole", uses: "Used for intestinal and anaerobic infections." },
+  { name: "Tinidazole", uses: "Used to treat parasitic infections." },
+  { name: "Rifaximin", uses: "Used for intestinal bacterial infections." },
+
+  // ================= HEART & BP =================
+  { name: "Amlodipine", uses: "Used to control high blood pressure." },
+  { name: "Losartan", uses: "Used to manage blood pressure." },
+  { name: "Telmisartan", uses: "Used for hypertension control." },
+  { name: "Valsartan", uses: "Used to manage heart conditions." },
+  { name: "Ramipril", uses: "Used to lower blood pressure." },
+  { name: "Enalapril", uses: "Used for heart failure and BP control." },
+  { name: "Metoprolol", uses: "Used to control heart rate and BP." },
+  { name: "Atenolol", uses: "Used for hypertension and angina." },
+  { name: "Bisoprolol", uses: "Used to manage heart rhythm." },
+  { name: "Carvedilol", uses: "Used in heart failure management." },
+  { name: "Atorvastatin", uses: "Used to lower cholesterol." },
+  { name: "Rosuvastatin", uses: "Used to reduce bad cholesterol." },
+  { name: "Simvastatin", uses: "Used to manage lipid levels." },
+  { name: "Clopidogrel", uses: "Used to prevent blood clots." },
+  { name: "Nitroglycerin", uses: "Used to relieve chest pain." },
+  { name: "Furosemide", uses: "Used to reduce excess body fluid." },
+  { name: "Spironolactone", uses: "Used to manage fluid retention." },
+  { name: "Digoxin", uses: "Used to improve heart contraction." },
+
+  // ================= DIABETES =================
+  { name: "Metformin", uses: "Used to control blood sugar levels." },
+  { name: "Glimepiride", uses: "Used to reduce blood glucose." },
+  { name: "Gliclazide", uses: "Used to stimulate insulin release." },
+  { name: "Glipizide", uses: "Used to manage type 2 diabetes." },
+  { name: "Pioglitazone", uses: "Used to improve insulin sensitivity." },
+  { name: "Sitagliptin", uses: "Used to regulate blood sugar." },
+  { name: "Vildagliptin", uses: "Used for glucose control." },
+  { name: "Teneligliptin", uses: "Used to improve blood sugar levels." },
+  { name: "Linagliptin", uses: "Used for diabetes management." },
+  { name: "Dapagliflozin", uses: "Used to lower blood sugar via kidneys." },
+  { name: "Empagliflozin", uses: "Used to control sugar and heart health." },
+  { name: "Canagliflozin", uses: "Used to reduce glucose reabsorption." },
+  { name: "Acarbose", uses: "Used to slow carbohydrate absorption." },
+  { name: "Voglibose", uses: "Used to control post-meal sugar." },
+
+  // ================= GYNECOLOGY =================
+  { name: "Tranexamic Acid", uses: "Used to reduce heavy menstrual bleeding." },
+  { name: "Primolut N", uses: "Used to regulate menstrual cycles." },
+  { name: "Duphaston", uses: "Used for progesterone support." },
+  { name: "Meprate", uses: "Used in menstrual disorders." },
+  { name: "Deviry", uses: "Used for hormonal balance." },
+  { name: "Norethisterone", uses: "Used to manage menstrual irregularities." },
+  { name: "Clomiphene Citrate", uses: "Used to induce ovulation." },
+  { name: "Letrozole", uses: "Used for infertility management." },
+  { name: "Misoprostol", uses: "Used in gynecological procedures." },
+  { name: "Mifepristone", uses: "Used in hormonal therapy." },
+  { name: "Folic Acid", uses: "Used to support pregnancy." },
+  { name: "Iron Folic Acid", uses: "Used to prevent anemia." },
+
+  // ================= DIARRHEA & GUT =================
+  { name: "ORS", uses: "Used to prevent dehydration." },
+  { name: "Loperamide", uses: "Used to reduce loose motions." },
+  { name: "Racecadotril", uses: "Used to reduce intestinal fluid loss." },
+  { name: "Zinc Sulfate", uses: "Used to shorten diarrhea duration." },
+  { name: "Lactobacillus", uses: "Used to restore gut bacteria." },
+  { name: "Bacillus clausii", uses: "Used for gut imbalance." },
+  { name: "Domperidone", uses: "Used to reduce nausea." },
+  { name: "Ondansetron", uses: "Used to control vomiting." },
+  { name: "Pantoprazole", uses: "Used to reduce stomach acid." },
+  { name: "Omeprazole", uses: "Used for acid reflux." },
+  { name: "Rabeprazole", uses: "Used to treat acidity." },
+
+  // ================= MULTIVITAMINS =================
+  { name: "Supradyn", uses: "Supports overall health." },
+  { name: "Revital H", uses: "Improves energy levels." },
+  { name: "Zincovit", uses: "Boosts immunity." },
+  { name: "Centrum", uses: "Provides daily nutrition." },
+  { name: "Becosules", uses: "Prevents vitamin deficiency." },
+  { name: "Neurobion", uses: "Supports nerve health." },
+  { name: "Shelcal", uses: "Supports bone health." },
+  { name: "Evion", uses: "Provides antioxidant support." },
+  { name: "Wellwoman", uses: "Supports women’s health." },
+  { name: "Wellman", uses: "Supports men’s health." },
+  { name: "A to Z NS", uses: "Provides balanced nutrition." },
+  { name: "Health OK", uses: "Supports daily wellness." },
+  { name: "Maxirich", uses: "Supports immunity and energy." },
+
+];
