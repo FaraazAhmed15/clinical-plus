@@ -198,14 +198,33 @@ export default function Home() {
       </section>
 
       {/*featured disease */}
-      <section className="px-10 py-14">
-        <h3 className="text-2xl font-semibold mb-6">Featured Diseases</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <DiseaseCard title="Diabetes" description="Causes, symptoms, treatments." image="/photos/Diabetes.jpeg" />
-          <DiseaseCard title="Hypertension" description="Blood pressure disorders." image="/photos/Hypertension.jpeg" />
-          <DiseaseCard title="Asthma" description="Respiratory disease overview." image="/photos/asthma.jpeg" />
-        </div>
-      </section>
+      {/* featured disease */}
+<section className="px-10 py-14">
+  <h3 className="text-2xl font-semibold mb-6">Featured Diseases</h3>
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <Link href="/diabetes">
+      <DiseaseCard 
+        title="Diabetes" 
+        description="Causes, symptoms, treatments." 
+        image="/photos/Diabetes.jpeg" 
+      />
+    </Link>
+    <Link href="/hypertension">
+      <DiseaseCard 
+        title="Hypertension" 
+        description="Blood pressure disorders." 
+        image="/photos/Hypertension.jpeg" 
+      />
+    </Link>
+    <Link href="/asthma">
+      <DiseaseCard 
+        title="Asthma" 
+        description="Respiratory disease overview." 
+        image="/photos/asthma.jpeg" 
+      />
+    </Link>
+  </div>
+</section>
 
       {/* ===================== LATEST NEWS (AUTO ROTATING) ===================== */}
       <section className="px-10 py-14">
